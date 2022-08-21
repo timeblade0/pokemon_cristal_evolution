@@ -1,0 +1,51 @@
+jump=0		//cooldown for jump
+fall=0		//1 if falling
+damage_immune=0	//delay damage from multi hits
+image_speed=0
+dire=0
+speed=0
+if(global.pokemon="aron")
+{
+	if(global.crystal_ground==0){
+		unit_speed=2
+		double_jump=0
+		water_smash=0
+		sprite_index=spr_aron
+	}
+	if(global.crystal_ground==1){
+		unit_speed=3
+		double_jump=1
+		water_smash=0
+		sprite_index=spr_lairon
+	}
+}
+if(global.pokemon="magikarp")
+{
+	if(global.crystal_water==0){
+		unit_speed=2
+		double_jump=0
+		water_smash=0
+		sprite_index=spr_magikarp
+	}
+	if(global.crystal_water==1){
+		unit_speed=4
+		double_jump=0
+		water_smash=1
+		sprite_index=spr_gyrados
+	}
+}
+if(global.pokemon="slugma")
+{
+	if(global.crystal_fire==0){
+		unit_speed=2
+		double_jump=0
+		water_smash=0
+		sprite_index=spr_slugma
+	}
+	if(global.crystal_fire==1){
+		unit_speed=3
+		double_jump=0
+		water_smash=0
+		sprite_index=spr_magcargo
+	}
+}

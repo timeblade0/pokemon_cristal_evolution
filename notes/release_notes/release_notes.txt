@@ -1,0 +1,2 @@
+//20220513 SMW
+	port to GMS2
